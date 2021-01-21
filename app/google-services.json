@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "655132463202",
+    "project_id": "thuchi-8db52",
+    "storage_bucket": "thuchi-8db52.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:655132463202:android:b7c9f8faaf01faf45d013b",
+        "android_client_info": {
+          "package_name": "com.hieu.ThuChi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "655132463202-f3ta5apfca555mrrak0vnvpib8niafir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_KMyWjbeg7US3_M8IomzuVUyek4F9dG8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "655132463202-f3ta5apfca555mrrak0vnvpib8niafir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
