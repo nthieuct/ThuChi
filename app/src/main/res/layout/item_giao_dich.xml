@@ -12,7 +12,7 @@
         android:layout_height="70dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:background="@drawable/bg_tron"
+        android:background="@drawable/bg_tron_thu"
         android:gravity="center"
         android:text="thu"
         android:textAlignment="center"

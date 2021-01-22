@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.LayoutRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 
 import com.hieu.ThuChi.R;
 import com.hieu.ThuChi.model.GiaoDich;
@@ -68,10 +69,23 @@ public class GiaoDichAdapter extends ArrayAdapter<GiaoDich> {
         viewHolder.txt_so_tien_sau.setText("Sau GD: " + decim.format(giaoDich.getSoTienSau()));
         viewHolder.txt_ngay_giao_dich.setText(giaoDich.getNgayGiaoDich());
 
-        if (loaiGiaoDich == 1)
+        if (loaiGiaoDich == 1) {
             viewHolder.txt_loai_giao_dich.setText("thu");
-        else
+            final int sdk = android.os.Build.VERSION.SDK_INT;
+            if (sdk < android.os.Build.VERSION_CODES.JELLY_BEAN) {
+                viewHolder.txt_loai_giao_dich.setBackgroundDrawable(ContextCompat.getDrawable(context, R.drawable.bg_tron_thu));
+            } else {
+                viewHolder.txt_loai_giao_dich.setBackground(ContextCompat.getDrawable(context, R.drawable.bg_tron_thu));
+            }
+        } else {
             viewHolder.txt_loai_giao_dich.setText("chi");
+            final int sdk = android.os.Build.VERSION.SDK_INT;
+            if (sdk < android.os.Build.VERSION_CODES.JELLY_BEAN) {
+                viewHolder.txt_loai_giao_dich.setBackgroundDrawable(ContextCompat.getDrawable(context, R.drawable.bg_tron_chi));
+            } else {
+                viewHolder.txt_loai_giao_dich.setBackground(ContextCompat.getDrawable(context, R.drawable.bg_tron_chi));
+            }
+        }
 
         return convertView;
     }
